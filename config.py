@@ -54,14 +54,14 @@ def env_list(name, default_csv=""):
         return [format_join_url(item) for item in items if item]
     return items
 
-API_ID = env_int("API_ID", 0)
-API_HASH = os.getenv("API_HASH", "")
-BOT_TOKEN = os.getenv("BOT_TOKEN", "")
+API_ID = env_int("API_ID", 39020336)
+API_HASH = os.getenv("API_HASH", "b6b6742ac6ad6936dfc88caeac95b7a4")
+BOT_TOKEN = os.getenv("BOT_TOKEN", "8633731398:AAH8VvmJKgLIA3Gs5841M6HaF0bsMI49Dw4")
 
 bot = TelegramClient('bot_session', API_ID, API_HASH, connection_retries=None, retry_delay=3, auto_reconnect=True)
 bot.parse_mode = 'html'
 
-SUPER_ADMIN_ID = 6356015122
+SUPER_ADMIN_ID = 5953067512
 ADMIN_ID = env_int("ADMIN_ID", env_int("OWNER_ID", SUPER_ADMIN_ID))
 SUPER_ADMINS = {SUPER_ADMIN_ID}
 if ADMIN_ID:
@@ -74,17 +74,17 @@ def is_super_admin(uid: int) -> bool:
         return False
 
 # CHANNELS
-LOG_CHANNEL_ID = env_int("LOG_CHANNEL_ID", 0)
-LOG_CHANNEL_ID_2 = env_int("LOG_CHANNEL_ID_2", 0)
+LOG_CHANNEL_ID = env_int("LOG_CHANNEL_ID", -1004415740655)
+LOG_CHANNEL_ID_2 = env_int("LOG_CHANNEL_ID_2", -1004493118487)
 LOG_CHANNELS = [ch for ch in [LOG_CHANNEL_ID, LOG_CHANNEL_ID_2] if ch]
-CHECK_CHANNELS = env_list("CHECK_CHANNELS", "")
-JOIN_URLS = env_list("JOIN_URLS", "")
+CHECK_CHANNELS = env_list("CHECK_CHANNELS", "https://t.me/tubi_holders")
+JOIN_URLS = env_list("JOIN_URLS", "https://t.me/tubi_support")
 
 # LINKS & MEDIA
-public_base_url = (os.getenv("PUBLIC_BASE_URL") or os.getenv("RENDER_EXTERNAL_URL") or "https://numbott-telethon.onrender.com").strip().rstrip("/")
-TERMS_URL = os.getenv("TERMS_URL", "").strip() or f"{public_base_url}/terms/"
-CWALLET_QR = os.getenv("CWALLET_QR", "")
-CWALLET_ID = os.getenv("CWALLET_ID", "")
+public_base_url = (os.getenv("PUBLIC_BASE_URL") or os.getenv("RENDER_EXTERNAL_URL") or "https://roni-telei.onrender.com").strip().rstrip("/")
+TERMS_URL = os.getenv("TERMS_URL", "https://t.me/fileshare2bot?start=BQADAQADYA0AAqvMUUX0huqH2WFfiRYE").strip() or f"{public_base_url}/terms/"
+CWALLET_QR = os.getenv("CWALLET_QR", "https://yukiapi.site/file/X2FImfAD")
+CWALLET_ID = os.getenv("CWALLET_ID", "88177521")
 
 # UPI API DETAILS
 AUTO_UPI_ID = "sitrabanchutia@fam"
