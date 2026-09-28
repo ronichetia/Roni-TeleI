@@ -87,7 +87,7 @@ CWALLET_QR = os.getenv("CWALLET_QR", "")
 CWALLET_ID = os.getenv("CWALLET_ID", "")
 
 # UPI API DETAILS
-AUTO_UPI_ID = "bobbyahirwar@fam"
+AUTO_UPI_ID = "sitrabanchutia@fam"
 UPI_MID = os.getenv("UPI_MID", "")
 UPI_ID = os.getenv("UPI_ID", AUTO_UPI_ID)
 
