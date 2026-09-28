@@ -76,7 +76,7 @@ def get_usdt_rate():
 
 
 def get_support_url():
-    url = _setting("support_url") or "https://t.me/global_robots_chat"
+    url = _setting("support_url") or "https://t.me/tubi_support"
     return url if url.startswith("http") else "https://" + url.replace("@", "t.me/")
 
 
