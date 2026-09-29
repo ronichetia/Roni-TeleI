@@ -215,7 +215,6 @@ async def show_buy_menu(event):
         [style_btn("🔙 𝐁ᴀᴄᴋ ᴛᴏ 𝐃ᴀsʜʙᴏᴀʀᴅ", b"dashboard_main", "danger", icon=6129812419028982717)]
     ]
     if show_more_filters:
-        btns.insert(3, [style_btn("🎯 𝐌ᴏʀᴇ 𝐀ᴄᴄᴏᴜɴᴛ 𝐅ɪʟᴛᴇʀs (𝐒ᴛᴀʀs/2𝐅𝐀...)", b"pg_filters|1", "success", icon=5409320020058584473)])
     if await send_bannered_message(bot, event, "buy", msg, btns):
         return
     if isinstance(event, events.CallbackQuery.Event):
