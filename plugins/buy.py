@@ -214,15 +214,7 @@ async def show_buy_menu(event):
         [style_btn("🌍 𝐀ʟʟ 𝐂ᴏᴜɴᴛʀɪᴇs (𝐅ʀᴇsʜ & 𝐀ʟʟ)", b"pg_c|bulk|1|menu", "primary", icon=6154249597532248059)],
         [style_btn("🔙 𝐁ᴀᴄᴋ ᴛᴏ 𝐃ᴀsʜʙᴏᴀʀᴅ", b"dashboard_main", "danger", icon=6129812419028982717)]
     ]
-    if show_more_filters:
-    if await send_bannered_message(bot, event, "buy", msg, btns):
-        return
-    if isinstance(event, events.CallbackQuery.Event):
-        try: await event.edit(msg, buttons=btns)
-        except MessageNotModifiedError: pass
-    else:
-        await event.respond(msg, buttons=btns)
-
+    
 async def show_years_catalog(event, back_target="menu"):
     msg = (f"<blockquote>🏛️ <b>𝐒ᴇʟᴇᴄᴛ 𝐀ᴄᴄᴏᴜɴᴛ 𝐘ᴇᴀʀ (𝐀ɢᴇ):</b>\n\n"
            f"<i>𝐀ɢᴇᴅ ᴀᴄᴄᴏᴜɴᴛs ʜᴀᴠᴇ ʜɪɢʜᴇʀ ᴛʀᴜsᴛ, ʟᴏᴡᴇʀ ʙᴀɴ ʀᴀᴛᴇs, ᴀɴᴅ ʟᴏɴɢᴇʀ ʜɪsᴛᴏʀʏ!</i></blockquote>")
