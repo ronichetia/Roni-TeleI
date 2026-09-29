@@ -204,8 +204,7 @@ async def show_buy_menu(event):
            f"🟢 <b>𝐍ᴏɴ-𝐒ᴘᴀᴍ / 𝐂ʟᴇᴀɴ:</b> 100% 𝐒ᴘᴀᴍʙʟᴏᴄᴋ-𝐅ʀᴇᴇ (𝐃𝐌 & 𝐏ᴇʀsᴏɴᴀʟ 𝐔sᴇ).\n"
            f"🟡 <b>𝐒ᴘᴀᴍ / 𝐔sᴇᴅ (𝐂ʜᴇᴀᴘ):</b> 𝐁ᴜᴅɢᴇᴛ 𝐀ᴄᴄᴏᴜɴᴛs (𝐂ʜᴀɴɴᴇʟ 𝐉ᴏɪɴᴇʀs & 𝐌ᴇᴍʙᴇʀs).\n"
            f"{more_filters_line}"
-           f"🌍 <b>𝐀ʟʟ 𝐂ᴏᴜɴᴛʀɪᴇs:</b> 𝐁ʀᴏᴡsᴇ 50+ ᴄᴏᴜɴᴛʀɪᴇs sᴛᴏᴄᴋ (𝐅ʀᴇsʜ & 𝐀ʟʟ).\n"
-           f"🏛️ <b>𝐎ʟᴅ / 𝐀ɢᴇᴅ 𝐀ᴄᴄᴏᴜɴᴛs:</b> 𝐅ɪʟᴛᴇʀ ʙʏ 𝐒ᴘᴇᴄɪғɪᴄ 𝐘ᴇᴀʀ (2025, 2024, 2023...).</blockquote>")
+           f"🌍 <b>𝐀ʟʟ 𝐂ᴏᴜɴᴛʀɪᴇs:</b> 𝐁ʀᴏᴡsᴇ 50+ ᴄᴏᴜɴᴛʀɪᴇs sᴛᴏᴄᴋ (𝐅ʀᴇsʜ & 𝐀ʟʟ)."</blockquote>")
     btns = [
         [style_btn("🔍 𝐒ᴇᴀʀᴄʜ 𝐂ᴏᴜɴᴛʀʏ", b"search_country_btn", "primary", icon=5409098988156629257)],
         [
@@ -213,7 +212,6 @@ async def show_buy_menu(event):
             style_btn("🟡 𝐒ᴘᴀᴍ / 𝐔sᴇᴅ (𝐂ʜᴇᴀᴘ)", b"pg_c|spam|1|menu", "primary", icon=5408995930416362034)
         ],
         [style_btn("🌍 𝐀ʟʟ 𝐂ᴏᴜɴᴛʀɪᴇs (𝐅ʀᴇsʜ & 𝐀ʟʟ)", b"pg_c|bulk|1|menu", "primary", icon=6154249597532248059)],
-        [style_btn("🏛️ 𝐎ʟᴅ / 𝐀ɢᴇᴅ 𝐀ᴄᴄᴏᴜɴᴛs (ʙʏ 𝐘ᴇᴀʀ)", b"by_years_menu|menu", "primary", icon=5408995930416362034)],
         [style_btn("🔙 𝐁ᴀᴄᴋ ᴛᴏ 𝐃ᴀsʜʙᴏᴀʀᴅ", b"dashboard_main", "danger", icon=6129812419028982717)]
     ]
     if show_more_filters:
