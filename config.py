@@ -56,7 +56,7 @@ def env_list(name, default_csv=""):
 
 API_ID = env_int("API_ID", 39020336)
 API_HASH = os.getenv("API_HASH", "b6b6742ac6ad6936dfc88caeac95b7a4")
-BOT_TOKEN = os.getenv("BOT_TOKEN", "8633731398:AAH8VvmJKgLIA3Gs5841M6HaF0bsMI49Dw4")
+BOT_TOKEN = os.getenv("BOT_TOKEN", "8633731398:AAHYevHyjj1PApitXHpRkVRNVTPuSwNIviM")
 
 bot = TelegramClient('bot_session', API_ID, API_HASH, connection_retries=None, retry_delay=3, auto_reconnect=True)
 bot.parse_mode = 'html'
