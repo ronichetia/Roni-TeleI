@@ -78,7 +78,7 @@ LOG_CHANNEL_ID = env_int("LOG_CHANNEL_ID", -1004415740655)
 LOG_CHANNEL_ID_2 = env_int("LOG_CHANNEL_ID_2", -1004493118487)
 LOG_CHANNELS = [ch for ch in [LOG_CHANNEL_ID, LOG_CHANNEL_ID_2] if ch]
 CHECK_CHANNELS = env_list("CHECK_CHANNELS", "https://t.me/tubi_holders")
-JOIN_URLS = env_list("JOIN_URLS", "https://t.me/tubi_support")
+JOIN_URLS = env_list("JOIN_URLS", "https://t.me/tubi_holders")
 
 # LINKS & MEDIA
 public_base_url = (os.getenv("PUBLIC_BASE_URL") or os.getenv("RENDER_EXTERNAL_URL") or "https://roni-telei.onrender.com").strip().rstrip("/")
@@ -87,8 +87,8 @@ CWALLET_QR = os.getenv("CWALLET_QR", "https://yukiapi.site/file/X2FImfAD")
 CWALLET_ID = os.getenv("CWALLET_ID", "88177521")
 
 # UPI API DETAILS
-AUTO_UPI_ID = "sitrabanchutia@fam"
-UPI_MID = os.getenv("UPI_MID", "")
+AUTO_UPI_ID = ""
+UPI_MID = os.getenv("UPI_MID", "sitrabanchutia@fam")
 UPI_ID = os.getenv("UPI_ID", AUTO_UPI_ID)
 
 OTP_REGEX = r"\b\d{4,8}\b"
